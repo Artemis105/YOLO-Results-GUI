@@ -60,7 +60,7 @@ projekt/
 8. **Zapisz wynik do folderu zapisu klikając przycisk Zapisz – zapisany obraz będzie zawierał ramki predykcji oraz wartości pewności, a nazwa pliku uwzględnia użyty model i ustawione parametry.**
 
 
-##Wymagania
+## Wymagania
 
  Plik requirements.txt zawiera wszystkie niezbędne biblioteki do uruchomienia aplikacji
 
