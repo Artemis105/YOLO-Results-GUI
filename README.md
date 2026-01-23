@@ -47,17 +47,17 @@ projekt/
    - Aplikacja domyślnie zakłada określoną strukturę katalogów (foldery z obrazami, modelami, zapisem wyników i etykietami), ale możesz ją zmienić, wskazując własne katalogi w `Ustawienia.py`.  
    - Upewnij się, że w wybranych katalogach znajdują się odpowiednie pliki: obrazy (`.jpg`, `.jpeg`, `.png`) oraz modele YOLO (`.pt`).  
 
-3. **Zainstaluj wymagane biblioteki** używając pliku `requirements.txt`:
+3. **Zainstaluj wymagane biblioteki** używając pliku `requirements.txt`:**
 
    ```bash
    pip install -r requirements.txt
-4. **Uruchom aplikację poleceniem:
+4. **Uruchom aplikację poleceniem:**
     ```bash
     python aplikacja_pred.py
-5. **Wybierz obraz i model z list dostępnych w GUI.
-6. **Dostosuj parametry predykcji za pomocą suwaków Confidence i IoU.
-7. **Uruchom predykcję klikając przycisk Predykcja – wyniki pojawią się w oknie programu.
-8. **Zapisz wynik do folderu zapisu klikając przycisk Zapisz – zapisany obraz będzie zawierał ramki predykcji oraz wartości pewności, a nazwa pliku uwzględnia użyty model i ustawione parametry.
+5. **Wybierz obraz i model z list dostępnych w GUI.**
+6. **Dostosuj parametry predykcji za pomocą suwaków Confidence i IoU.**
+7. **Uruchom predykcję klikając przycisk Predykcja – wyniki pojawią się w oknie programu.**
+8. **Zapisz wynik do folderu zapisu klikając przycisk Zapisz – zapisany obraz będzie zawierał ramki predykcji oraz wartości pewności, a nazwa pliku uwzględnia użyty model i ustawione parametry.**
 
 
 ##Wymagania
