@@ -39,7 +39,7 @@ projekt/
 │   ├── model/       ← modele YOLO (.pt)
 │   ├── Zapis/       ← zapisane predykcje
 │   └── label/       ← etykiety (opcjonalnie)
-
+```
 ## Krok po kroku – jak uruchomić aplikację
 1. **Pobierz repozytorium** na swój komputer i upewnij się, że masz Python 3.9 lub nowszy.  
 
