@@ -1,31 +1,30 @@
 # YOLO Results GUI
 
-Aplikacja desktopowa napisana w Pythonie z wykorzystaniem **CustomTkinter**, umożliwiająca wykonywanie predykcji obiektów na obrazach przy użyciu **wytrenowanych modeli YOLO (.pt)**.
+A desktop application written in Python using **CustomTkinter**, enabling object prediction on images with **trained YOLO models (.pt)**.
 
-Aplikacja pozwala na wybór obrazu i modelu, regulację parametrów predykcji (Confidence i IoU) oraz zapis obrazu z zaznaczonymi ramkami predykcji.
-
----
-
-## ✨ Funkcjonalności
-
-- Obsługa wytrenowanych modeli YOLO (`.pt`)
--  Wybór obrazu do predykcji z listy
--  Podgląd zdjęć w aplikacji
--  Regulacja:
-  - **Pewność (Confidence)** – suwak procentowy
-  - **IoU (Intersection over Union)** – suwak
--  Wyświetlanie ramek predykcji z wartością pewności
--  Zapis obrazu z predykcjami do folderu
--  Nowoczesny interfejs GUI (CustomTkinter)
-
+The application allows you to select an image and a model, adjust prediction parameters (Confidence and IoU), and save the image with marked prediction bounding boxes.
 
 ---
 
-## 🗂️ Struktura katalogów (WYMAGANE)
+## ✨ Features
 
-Aplikacja domyślnie wymaga konkretnej struktury folderów, jednak możesz ją zmienić w pliku Ustawienia.py, wskazując inne ścieżki do obrazów, modeli, zapisów i etykiet.
+- Support for trained YOLO models (`.pt`)
+-  Selection of an image for prediction from a list
+-  Image preview within the application
+-  Adjustment of:
+  - **Confidence** – percentage slider
+  - **IoU (Intersection over Union)** – slider
+-  Display of prediction bounding boxes with confidence values
+-  Saving images with predictions to a folder
+-  Modern GUI interface (CustomTkinter)
 
-Domyślna struktura wygląda następująco:
+---
+
+## 🗂️ Directory Structure (REQUIRED)
+
+By default, the application requires a specific folder structure; however, you can change it in the `Ustawienia.py` file by specifying different paths for images, models, outputs, and labels.
+
+The default structure is as follows:
 
 ```text
 projekt/
@@ -35,34 +34,40 @@ projekt/
 ├── Predykcja.py
 │
 ├── Dane/
-│   ├── zdjecia/     ← obrazy (.jpg, .jpeg, .png)
-│   ├── model/       ← modele YOLO (.pt)
-│   ├── Zapis/       ← zapisane predykcje
-│   └── label/       ← etykiety (opcjonalnie)
+│   ├── zdjecia/     ← images (.jpg, .jpeg, .png)
+│   ├── model/       ← YOLO models (.pt)
+│   ├── Zapis/       ← saved predictions
+│   └── label/       ← labels (optional)
 ```
-## Krok po kroku – jak uruchomić aplikację
-1. **Pobierz repozytorium** na swój komputer i upewnij się, że masz Python 3.9 lub nowszy.  
 
-2. **Przygotuj katalogi i skonfiguruj ścieżki w pliku `Ustawienia.py`**  
-   - Aplikacja domyślnie zakłada określoną strukturę katalogów (foldery z obrazami, modelami, zapisem wyników i etykietami), ale możesz ją zmienić, wskazując własne katalogi w `Ustawienia.py`.  
-   - Upewnij się, że w wybranych katalogach znajdują się odpowiednie pliki: obrazy (`.jpg`, `.jpeg`, `.png`) oraz modele YOLO (`.pt`).  
+## Step by step – how to run the application
 
-3. **Zainstaluj wymagane biblioteki** używając pliku `requirements.txt`:**
+1. **Download the repository** to your computer and make sure you have Python 3.9 or newer installed.
+
+2. **Prepare directories and configure paths in the `Ustawienia.py` file**
+   - By default, the application assumes a specific directory structure (folders for images, models, output results, and labels), but you can change it by specifying your own directories in `Ustawienia.py`.
+   - Make sure the selected directories contain the appropriate files: images (`.jpg`, `.jpeg`, `.png`) and YOLO models (`.pt`).
+
+3. **Install the required libraries** using the `requirements.txt` file:**
 
    ```bash
    pip install -r requirements.txt
-4. **Uruchom aplikację poleceniem:**
-    ```bash
-    python aplikacja_pred.py
-5. **Wybierz obraz i model z list dostępnych w GUI.**
-6. **Dostosuj parametry predykcji za pomocą suwaków Confidence i IoU.**
-7. **Uruchom predykcję klikając przycisk Predykcja – wyniki pojawią się w oknie programu.**
-8. **Zapisz wynik do folderu zapisu klikając przycisk Zapisz – zapisany obraz będzie zawierał ramki predykcji oraz wartości pewności, a nazwa pliku uwzględnia użyty model i ustawione parametry.**
 
+4. **Run the application with the command:**
+   ```bash
+   python aplikacja_pred.py
 
-## Wymagania
+5. **Select an image and a model from the lists available in the GUI.**
 
- Plik requirements.txt zawiera wszystkie niezbędne biblioteki do uruchomienia aplikacji
+6. **Adjust the prediction parameters using the Confidence and IoU sliders.**
 
+7. **Start the prediction by clicking the Prediction button – the results will appear in the application window.**
 
-Projekt jest edukacyjny i może być łatwo rozszerzony o dodatkowe funkcjonalności, takie jak obsługa wideo, kamery lub batch processing wielu obrazów jednocześnie.
+8. **Save the result to the output folder by clicking the Save button – the saved image will contain prediction bounding boxes and confidence values, and the file name will include the used model and selected parameters.**
+
+## Requirements
+
+The `requirements.txt` file contains all the necessary libraries to run the application.
+
+This project is educational and can be easily extended with additional features, such as video support, camera input, or batch processing of multiple images simultaneously.
+
