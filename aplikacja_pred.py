@@ -43,7 +43,7 @@ class App(ctk.CTk):
         self.label_iou = ctk.CTkLabel(master=self, text="IoU", font=ctk.CTkFont(size=15), height=10)
         self.label_pew = ctk.CTkLabel(master=self, text="Pewność", font=ctk.CTkFont(size=15), height=10)
 
-        self.var_label_iou = ctk.CTkLabel(master=self, font=ctk.CTkFont(size=15), height=10)
+        self.var_label_iou = ctk.CTkLabel(master=self, text=self.variable_IoU, font=ctk.CTkFont(size=15), height=10)
         self.var_label_pew = ctk.CTkLabel(master=self, text=self.variable_pew, font=ctk.CTkFont(size=15), height=10)
 
         self.label_model = ctk.CTkLabel(master=self, text="  Wybierz model:", font=ctk.CTkFont(size=15), height=10)
@@ -183,3 +183,4 @@ if __name__ == "__main__":
     app = App()
     app.mainloop()
 #
+
