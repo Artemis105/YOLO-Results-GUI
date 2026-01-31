@@ -56,13 +56,19 @@ projekt/
 4. **Run the application with the command:**
    ```bash
    python aplikacja_pred.py
+<p float="left">
+  <img src="Example1.png"  />
 
+</p>
 5. **Select an image and a model from the lists available in the GUI.**
 
 6. **Adjust the prediction parameters using the Confidence and IoU sliders.**
 
 7. **Start the prediction by clicking the Prediction button – the results will appear in the application window.**
+<p float="left">
+  <img src="Example2.png"  />
 
+</p>
 8. **Save the result to the output folder by clicking the Save button – the saved image will contain prediction bounding boxes and confidence values, and the file name will include the used model and selected parameters.**
 
 ## Requirements
