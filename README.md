@@ -12,8 +12,8 @@ The application allows you to select an image and a model, adjust prediction par
 -  Selection of an image for prediction from a list
 -  Image preview within the application
 -  Adjustment of:
-  - **Confidence** – percentage slider
-  - **IoU (Intersection over Union)** – slider
+    - **Confidence** – percentage slider
+    - **IoU (Intersection over Union)** – slider
 -  Display of prediction bounding boxes with confidence values
 -  Saving images with predictions to a folder
 -  Modern GUI interface (CustomTkinter)
@@ -60,6 +60,7 @@ projekt/
   <img src="Example1.png"  />
 
 </p>
+---
 5. **Select an image and a model from the lists available in the GUI.**
 
 6. **Adjust the prediction parameters using the Confidence and IoU sliders.**
@@ -69,6 +70,7 @@ projekt/
   <img src="Example2.png"  />
 
 </p>
+---
 8. **Save the result to the output folder by clicking the Save button – the saved image will contain prediction bounding boxes and confidence values, and the file name will include the used model and selected parameters.**
 
 ## Requirements
